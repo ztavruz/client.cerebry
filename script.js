@@ -1,6 +1,6 @@
 window.onload = function()
 {
-	/*
+	
     axios.post('http://ServerCerebry/audioSession/create', {
         name: 'Аудиосессия-1',
         image: 'qweqweqwe',
@@ -17,42 +17,11 @@ window.onload = function()
         console.log(response);
       });
 	  
-	  /audioSession/getAll
-	  */
-	 axios.get('http://ServerCerebry/audioSession/getAll')
-	.then(function (response) {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-    // handle success
-    console.log(response);
-	});
+	    //audioSession/getAll
+	
+	      //  axios.get('http://ServerCerebry/audioSession/getAll').then(function (response) {
+       //   // handle success
+       //   console.log(response);
+	      //});
 	
 }
