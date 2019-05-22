@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myslide">
+        <div id="one"><img src="images/weron2.jpeg" alt=""></div>
+        <div id="two"><img src="images/weron1.jpeg" alt=""></div>
+    </div>
+    <div>
+        
+    </div>
+
+    <script>
+        var block1 = document.getElementById('block1').value;
+        var block2 = document.getElementById('block2').value;
+        var block3 = document.getElementById('block3').value;
+        var block4 = document.getElementById('block4').value;
+        var block5 = document.getElementById('block5').value;
+
+        //клик мышью
+        block1.onclick = function () {
+            this.style.background = 'red';
+        }
+
+        //двойной клик мышью
+        block1.ondblclick = function () {
+            this.style.background = 'green';
+        }
+
+        //клик правой кнопкой мыши
+        block1.oncontextmenu = function () {
+            this.style.background = 'black';
+
+            //запрет вызова контекстного меню в местерасположения блока
+            return false //также отменяет дальнейшее срабатывание функций
+        }
+
+        //наведение на элемент
+        block2.onmouseenter = function () {
+            this.style.background = 'blue';
+        }
+        //сведение с элемента
+        block2.onmouseleave = function () {
+            this.style.background = 'white';
+        }
+
+        //движение мышью внутри блока
+        var step = 0;
+        block3.onmousemove = function () { //увеличение ширины блока
+            step++;
+            this.style.width = 100 + step + 'px';
+
+        }
+
+        //нажатие и удержание любой кнопки мыши (на любом месте)
+        block4.onmousedown = function () {
+            this.style.background = 'cyan';
+        }
+        //отжатие кнопки мыши НА элементе
+        block4.onmouseup = function () {
+            this.style.background = 'pink';
+        }
+        //   -------------------------Таймеры и интервалы-------------------------------
+        // таймер
+        // удобен для повторения функции через промежуток времени
+        // setInterval(functionName, time)
+        let sdvig = 0;
+
+        function move() {
+            block5.style.marginLeft = sdvig + 'px';
+            sdvig = sdvig + 3;
+        }
+        let timer = setInterval(move, 50); // 1s - 1000
+
+        let stop = document.getElementById('stop');
+        stop.onclic = function () {
+            clearInterval(timer); //убивает таймер
+        }
+
+        // пауза 
+        // удобна для задержки функции(единожды)
+        // setTimeout(functionName, time) 
+        // часто используется для  рекурсивного вызова функцией самой себя
+        let step = 0;
+        let timer_2;
+
+        function run() {
+            block1.style.marginLeft = step + 'px';
+            step = step + 10;
+            timet_2 = setTimeout(run, 3000);
+        }
+        clearTimeout(timer_2); //убивает таймер
+    </script>
+</body>
+
+</html>

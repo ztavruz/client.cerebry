@@ -1,0 +1,241 @@
+body{
+    background: #F2F2F2;
+}
+
+a{
+    text-decoration: none;
+}
+.hr_menu{
+    width: 90%;
+    margin: 10px auto;
+}
+/* -------------------------------------header------------------------------ */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif; 
+    /* margin-bottom: 17px;  */
+    height: 80px;
+}
+.header__section{
+    display: flex;
+    align-items: center;
+}
+.header__item{
+    font-size: 20px;
+}
+.headerlogo{
+    margin-left: 70px;
+}
+.headerButton{
+    padding-right: 60px;
+}
+/* -------------------------------------content------------------------------ */
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    /* border: 1px solid black; */
+}
+.content__left{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-left: 7%;
+
+    /* border: 1px solid black; */
+}
+.content__center{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 1%;
+    margin-left: 1%;
+
+    /* border: 1px solid black; */
+}
+.content__right{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-right: 7%;
+    
+
+    /* border: 1px solid black; */
+}
+/* ----------------------------- */
+.content__left_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #999999;
+
+    /* border: 1px solid black; */
+}
+.content__left_item i{
+    margin-right: 15px;
+    color: #495057;
+}
+.left__item_active{
+    background: #E5E5E5;
+    border-right: 5px solid #008B00;
+    color: #008B00;
+}
+.left__item_active i{
+    color: #008B00;
+}
+
+/* ----------------------------- */
+.content__center_titles{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    background: #008B00;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+    border: 1px solid #FFFFFF;
+}
+.titles__item{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.titles__item_id{
+    width: 15%;
+}
+.titles__item_name{
+    width: 25%;
+}
+.titles__item_date{
+    width: 20%;
+}
+.titles__item_listen{
+    width: 40%;
+}
+/* --------------------------- */
+.content__center_list{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.center__list_item{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+}
+.list__item{
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+.list__item_id{
+    width: 15%;
+}
+.list__item_name{
+    width: 25%;
+}
+/* --------------- */
+/* --------------- */
+.list__item_date{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    /* border: 1px solid black; */
+}
+.item__date_DMY{
+
+}
+.item__date_HMS{
+
+}
+/* --------------- */
+/* --------------- */
+.list__item_listen{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    /* border: 1px solid black; */
+
+}
+.item__listen_player{
+    width: 80% !important;
+    display: flex;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+/* --------------- */
+/* --------------- */
+.item__listen_menu{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* border: 1px solid black; */
+}
+.listen__menu_point{
+    width: 6px;
+    height: 6px;
+    background: silver;
+    border-radius: 50%;
+    margin: 2px auto;
+    margin-left: 70%;
+}
+/* --------------- */
+/* --------------------------- */
+
+.content__right button{
+    background: #FB8734;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+}
+/* -------------------------------------footer------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.borderblack{
+    border: 1px solid black;
+}
