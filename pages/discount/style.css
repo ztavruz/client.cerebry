@@ -30,41 +30,12 @@ a{
     display: flex;
     align-items: center;
 }
+.header__item{
+    font-size: 20px;
+}
 .headerlogo{
     margin-left: 70px;
 }
 .headerButton{
     padding-right: 60px;
-}
-
-
-.content{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-
-    border: 1px solid #000;
-}
-.content__center{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid #000;
-}
-.content__center_item{
-    border: 3px solid green;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
-    background:  greenyellow;
-    color: green;
-    font-size: 17px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    
 }
