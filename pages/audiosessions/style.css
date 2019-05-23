@@ -276,3 +276,7 @@ a{
 .borderblack{
     border: 1px solid black;
 }
+.h2_test{
+    width: 100%;
+    text-align: center;
+}
