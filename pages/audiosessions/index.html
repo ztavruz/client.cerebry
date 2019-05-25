@@ -32,7 +32,8 @@
         <li class="content__left_item"><a href=""><i class="fas fa-wallet"></i>Абонементы</a></li>
         <hr class="hr_menu">
         <li class="content__left_item"><a href=""></a> <i class="fas fa-user"></i>Пользователи</li>
-        <li class="content__left_item left__item_active"><a href=""><i class="fas fa-microphone"></i>Аудиосеансы</a></li>
+        <li class="content__left_item left__item_active"><a href=""><i class="fas fa-microphone"></i>Аудиосеансы</a>
+        </li>
         <li class="content__left_item"><a href=""><i class="fas fa-film"></i>Видеокурсы</a></li>
         <li class="content__left_item"><a href=""><i class="fas fa-comment-dots"></i>Комментарии</a></li>
         <li class="content__left_item"><a href=""><i class="fas fa-bell"></i>Уведомления</a></li>
@@ -66,10 +67,22 @@
                 <source src="ххх.mp4" type="audio/mpeg" />
               </audio>
             </div>
-            <div class="item__listen_menu">
+            <div class="item__listen_menu"  id="item__listen_menu">
               <span class="listen__menu_point"></span>
               <span class="listen__menu_point"></span>
               <span class="listen__menu_point"></span>
+              <div class="listen__menu_block" id="listen__menu_block">
+                <div class="menu__block_comand">
+                  <i class="far fa-times-circle"></i>Блокировать
+                </div>
+                <div class="menu__block_comand">
+                  <i class="fas fa-trash-alt"></i>Удалить
+                </div>
+                <hr class="hr_list">
+                <div class="menu__block_comand">
+                  <i class="fas fa-sign-out-alt"></i>Опубликовать
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -88,56 +101,92 @@
                 <source src="ххх.mp4" type="audio/mpeg" />
               </audio>
             </div>
-            <div class="item__listen_menu">
+            <div class="item__listen_menu"  id="item__listen_menu">
               <span class="listen__menu_point"></span>
               <span class="listen__menu_point"></span>
               <span class="listen__menu_point"></span>
+              <div class="listen__menu_block" id="listen__menu_block">
+                <div class="menu__block_comand">
+                  <i class="far fa-times-circle"></i>Блокировать
+                </div>
+                <div class="menu__block_comand">
+                  <i class="fas fa-trash-alt"></i>Удалить
+                </div>
+                <hr class="hr_list">
+                <div class="menu__block_comand">
+                  <i class="fas fa-sign-out-alt"></i>Опубликовать
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <hr class="hr_list">
         <div class="center__list_item">
-            <div class="list__item list__item_id">1123</div>
-            <div class="list__item list__item_name">Аудиосеанс-0</div>
-            <div class="list__item list__item_date">
-              <div class="item__date_DMY">18-07-2019</div>
-              <div class="item__date_HMS">12:26:10</div>
+          <div class="list__item list__item_id">1123</div>
+          <div class="list__item list__item_name">Аудиосеанс-0</div>
+          <div class="list__item list__item_date">
+            <div class="item__date_DMY">18-07-2019</div>
+            <div class="item__date_HMS">12:26:10</div>
+          </div>
+          <div class="list__item list__item_listen">
+            <div class="item__listen_player">
+              <audio controls class="player">
+                <source src="ххх.mp4" type="audio/mpeg" />
+              </audio>
             </div>
-            <div class="list__item list__item_listen">
-              <div class="item__listen_player">
-                <audio controls class="player">
-                  <source src="ххх.mp4" type="audio/mpeg" />
-                </audio>
-              </div>
-              <div class="item__listen_menu">
-                <span class="listen__menu_point"></span>
-                <span class="listen__menu_point"></span>
-                <span class="listen__menu_point"></span>
+            <div class="item__listen_menu"  id="item__listen_menu">
+              <span class="listen__menu_point"></span>
+              <span class="listen__menu_point"></span>
+              <span class="listen__menu_point"></span>
+              <div class="listen__menu_block" id="listen__menu_block">
+                <div class="menu__block_comand">
+                  <i class="far fa-times-circle"></i>Блокировать
+                </div>
+                <div class="menu__block_comand">
+                  <i class="fas fa-trash-alt"></i>Удалить
+                </div>
+                <hr class="hr_list">
+                <div class="menu__block_comand">
+                  <i class="fas fa-sign-out-alt"></i>Опубликовать
+                </div>
               </div>
             </div>
           </div>
-          <hr class="hr_list">
-          <div class="center__list_item">
-              <div class="list__item list__item_id">1123</div>
-              <div class="list__item list__item_name">Аудиосеанс-0</div>
-              <div class="list__item list__item_date">
-                <div class="item__date_DMY">18-07-2019</div>
-                <div class="item__date_HMS">12:26:10</div>
-              </div>
-              <div class="list__item list__item_listen">
-                <div class="item__listen_player">
-                  <audio controls class="player">
-                    <source src="ххх.mp4" type="audio/mpeg" />
-                  </audio>
+        </div>
+        <hr class="hr_list">
+        <div class="center__list_item">
+          <div class="list__item list__item_id">1123</div>
+          <div class="list__item list__item_name">Аудиосеанс-0</div>
+          <div class="list__item list__item_date">
+            <div class="item__date_DMY">18-07-2019</div>
+            <div class="item__date_HMS">12:26:10</div>
+          </div>
+          <div class="list__item list__item_listen">
+            <div class="item__listen_player">
+              <audio controls class="player">
+                <source src="ххх.mp4" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="item__listen_menu" id="item__listen_menu">
+              <span class="listen__menu_point"></span>
+              <span class="listen__menu_point"></span>
+              <span class="listen__menu_point"></span>
+              <div class="listen__menu_block" id="listen__menu_block">
+                <div class="menu__block_comand">
+                  <i class="far fa-times-circle"></i>Блокировать
                 </div>
-                <div class="item__listen_menu">
-                  <span class="listen__menu_point"></span>
-                  <span class="listen__menu_point"></span>
-                  <span class="listen__menu_point"></span>
+                <div class="menu__block_comand">
+                  <i class="fas fa-trash-alt"></i>Удалить
+                </div>
+                <hr class="hr_list">
+                <div class="menu__block_comand">
+                  <i class="fas fa-sign-out-alt"></i>Опубликовать
                 </div>
               </div>
             </div>
-            <hr class="hr_list">
+          </div>
+        </div>
+        <hr class="hr_list">
       </div>
       <!-- ------ -->
       <!-- ------ -->
@@ -147,15 +196,15 @@
     </div>
   </div>
   <div class="footer">
-      <div class="footer__section">
-          <div class="footer__item footerlogo">
-            <a href="#"><img src="/img/logo.jpg" alt=""></a>
-          </div>
-        </div>
-        <div class="footer__section">
-          <div class="footer__item footerButton">
-          </div>
-        </div>
+    <div class="footer__section">
+      <div class="footer__item footerlogo">
+        <a href="#"><img src="/img/logo.jpg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer__section">
+      <div class="footer__item footerButton">
+      </div>
+    </div>
   </div>
 
 
@@ -165,7 +214,7 @@
 
   <!-- добавить аудиосессию -->
   <div class="h2_test">
-      <h2>Тестовая форма..., нехуй сюда клацать!))</h2>
+    <h2>Тестовая форма..., нехуй сюда клацать!))</h2>
   </div>
 
   <div class="container">
@@ -229,7 +278,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
