@@ -1,62 +1,58 @@
 /* --заголовок---- */
-.content__center{
+.content__center {
     display: flex;
     width: 580px;
     height: 630px;
-    margin: 15px auto;
+    margin: 0px auto;
     border-radius: 5px;
 
-    border: 1px solid #000;
+
+    /* border: 1px solid #000; */
 }
+
 /* ----------------------------------------- */
-.content__center_section{
+.center__section {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
+    padding: 10px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 1px 1px #999999;
+    /* border: 1px solid #000; */
 }
-.section__titles{
+
+.section__titles {
+    display: flex;
     flex-direction: row;
     background: #008B00;
+    border-radius: 3px;
 }
-.section__list{
 
+.section__list {
+    margin-top: 20px;
 }
 
 /* ----------------------------------------- */
-.center__section_item{
+.section__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
     /* border: 1px solid #000; */
 }
-.section__item{
+
+.item {
     display: flex;
     flex-direction: row;
     background: #FFFFFF;
 
     /* border: 1px solid #000; */
 }
-.item{
+
+/* ------- */
+.item__id {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid #000; */
-}
-.item__title{
-    display: flex;
-    justify-content: flex-end;
-    width: 34%;
-    height: 20px;
-    margin: 10px;
-    background: #FFFFFF;
-}
-.item__name{
-    display: flex;
-    width: 66%;
-    height: 20px;
-    margin: 10px;
-    background: #F2F2F2;
-    border-radius: 3px;
 
 
     /* border: 1px solid #000; */
