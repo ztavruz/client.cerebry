@@ -1,4 +1,21 @@
 window.onload = function () {
+
+  
+  let item__list_menu = document.querySelectorAll('.item__list_menu');
+
+  item__list_menu.forEach(function (element) {
+      element.onclick = function () {
+          if (element.children[1].classList.contains('menu__block_hide')) {
+              element.children[1].classList.remove('menu__block_hide');
+              element.children[1].classList.add('menu__block_show');
+          } else {
+              element.children[1].classList.remove('menu__block_show');
+              element.children[1].classList.add('menu__block_hide');
+          }
+      }
+
+      console.log(element.children);
+  });
   // axios.get('http://ServerCerebry/audioSession/getAll').then(function (response) {
   //   // handle success
   //   console.log(response);
