@@ -85,7 +85,6 @@ body {
 .content {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     margin-top: 20px;
 
     /* border: 1px solid black; */
@@ -254,7 +253,18 @@ body {
 /* --------------- */
 /* --------------- */
 /* -------------------------------------footer------------------------------ */
-.footer {}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    /* margin-bottom: 17px;  */
+    height: 80px;
+}
 
 .footer__section {}
 
