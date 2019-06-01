@@ -188,3 +188,38 @@ a {
     margin-bottom: 5px;
     text-align: center;
 }
+
+@media screen and (max-width: 540px) {
+    .header{
+        display: flex;
+        padding-left:0;
+        padding-right: 0;
+    }
+    
+    .header__section_buttons{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .headerlogo {
+        margin-left: 0;
+    }
+
+    .headerlogo a img {
+        width: 100%;
+        /* margin-left: -20%; */
+    }
+    .header__section{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .header__section .section__item{
+        display: flex;
+        justify-content: center;
+    } 
+    .headerButton{
+        padding-right: 0;
+    }
+}
