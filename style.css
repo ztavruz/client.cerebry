@@ -223,3 +223,20 @@ a {
         padding-right: 0;
     }
 }
+@media screen and (min-width: 540px) and (max-width: 720px) {
+    .header{
+        display: flex;
+        padding-left:0;
+        padding-right: 0;
+    }
+    .headerButton{
+        padding-right: 0;
+    }
+    .header__section_buttons{
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        justify-content: space-around;
+    }
+
+}

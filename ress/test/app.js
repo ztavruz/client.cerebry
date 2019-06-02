@@ -42,7 +42,7 @@ window.onload = () => {
         popup.classList.add('popup');
 
         remove.innerHTML = "Удалить";
-
+        
         popup.appendChild(remove);
 
         root.appendChild(popup);
