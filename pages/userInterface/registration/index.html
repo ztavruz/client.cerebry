@@ -8,7 +8,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="/libs/users.css">
+    <link rel="stylesheet" href="/libs/css/users.css">
     <link rel="stylesheet" href="style.css">
     <title>client.cerebry</title>
 </head>
@@ -27,25 +27,225 @@
         </div>
     </div>
     <!-- <div class="content"> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-5 ">
-                    <div class="content__center">
-                        qweqweqweqwe
+    <!-- public $id;   
+            email;
+            phone;
+            password;
+            repassword;
+            lastName;
+            firstName;
+            middleName;
+            birthday;
+            gender;
+        
+            country
+            region;
+            city;
+            street;
+            build;
+            apartment
+            index
+            skype;
+             
+            public $abonements_for_user = []; -->
+    <div class="content">
+        <div class="content__center">
+            <div class="content__center_title">Регистрация:</div>
+            <hr class="hr_title">
+            <div class="content__center_left">
+                <div class="center__left_item">
+                    <!-- --email-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">E-mail адрес:</label></div>
                     </div>
-                    <div class="content__center">
-                        qweqweqweqwe
-                    </div>
-                    <div class="content__center">
-                        qweqweqweqwe
-                    </div>
-                    <div class="content__center">
-                        qweqweqweqwe
+                    <div class="left__item_value">
+                        <input type="text">
                     </div>
                 </div>
-                <div class="col-md-7 col-lg7 otstup"></div>
+                <div class="center__left_item">
+                    <!-- --phone-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Телефон:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --password-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Пароль:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --repassword-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Подтверждение пароля:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --lastName-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Фамилия:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --firstName-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Имя:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --middleName-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_label"><label for="">Отчество:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --birthday-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Дата рождения:</label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <div class="item__value_id">
+                            <input type="text">
+                        </div>
+                        <div class="item__value_id">
+                            <input type="text">
+                        </div>
+                        <div class="item__value_id">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --gender-- -->
+                    <div class="left__item_title">
+                        <div class="item__title_label"><label for="">Пол:</label></div>
+                    </div>
+                    <div class="left__item_box">
+                        <div class="left__item_value">
+                            <div class="item__value_id">
+                                <input class="check__men" type="radio" name="check__men" id="check__men"
+                                    value="option2">
+                                <label for="check__men">
+                                    Мужской
+                                </label>
+                            </div>
+                        </div>
+                        <div class="left__item_value"></div>
+                        <div class="item__value_id">
+                            <input class="check__women" type="radio" name="check__women" id="check__women"
+                                value="option2">
+                            <label for="check__women">
+                                Женский
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --FullAdress-- -->
+            <div class="center__left_item">
+                <div class="left__item_title">
+                    <div class="item__title_star">*</div>
+                    <div class="item__title_label"><label for="">Адрес проживания:</label></div>
+                </div>
+                <div class="left__item_value">
+                    <!-- --country-- -->
+                    <div class="select__title">Выберите страну</div>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div class="center__left_item">
+                <div class="left__item_box">
+                    <!-- --region-- -->
+                    <div class="left__item_value">
+                        <div class="select__title">Выберите регион:</div>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <!-- --city-- -->
+                    <div class="left__item_value">
+                        <div class="select__title">Выберите город:</div>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="center__left_item">
+                <!-- --street-- -->
+                <div class="left__item_value">
+                    <input type="text" placeholder="Улица">
+                </div>
+            </div>
+
+            <div class="center__left_item">
+                <div class="left__item_box">
+                    <!-- --build-- -->
+                    <div class="left__item_value">
+                        <input type="text" placeholder="Дом">
+                    </div>
+                    <!-- --apartment-- -->
+                    <div class="left__item_value" placeholder="Квартира">
+                        <input type="text">
+                    </div>
+                    <!-- --index-- -->
+                    <div class="left__item_value">
+                        <input type="text" placeholder="Индекс">
+                    </div>
+                </div>
+            </div>
+
+            <!-- --skype-- -->
+            <div class="center__left_item">
+                <div class="left__item_title">
+                    <div class="item__title_star">*</div>
+                    <div class="item__title_label"><label for=""></label></div>
+                </div>
+                <div class="left__item_value">
+                    <i class="icon_skype">S</i>
+                    <div class="vertical_line"></div>
+                    <input type="text" placeholder="Скайп">
+                </div>
             </div>
         </div>
+        <div class="content__center_right">
+
+        </div>
+    </div>
+    </div>
     <!-- </div> -->
     <div class="footer">
 

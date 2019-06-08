@@ -15,11 +15,17 @@
 <body>
     <div class="content">
         <div class="content__center">
-            <form name="addingAudiosession" action="" method="post">
+            <form name="addingAudiosession" id="addingAudiosession">
                 <div class="content__center_header">
-                    <div class="center__header_add"><i class="fas fa-plus-circle"></i> Добавить аудиосеанс</div>
-                    <div class="center__header_exit"><a href="/pages/audiosessions/index.html"><i
-                                class="fas fa-times"></i></a></div>
+                    <div class="center__header_add">
+                        <i class="fas fa-plus-circle"></i>
+                        <span class="add__item">Добавить аудиосеанс</span>
+                    </div>
+                    <div class="center__header_exit">
+                        <a href="/pages/adminInterface/audiosessions/allAudiosessions/index.html">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="content__center_dataAudiosession1">
@@ -29,27 +35,50 @@
                                 <div class="label__plus">+</div>
                                 <div class="label__obloshka">Обложка</div>
                             </label>
-                            <input id="col1_image" type="file" name="image" placeholder="+ Обложка">
+                            <input class="col1__image_input" id="col1_image" type="file" name="image"
+                                placeholder="+ Обложка">
                         </div>
                     </div>
                     <div class="dataAudiosession1__col2">
-                        <input class="dataAudiosession1__col2_name" type="text" name="nameAudiosession" placeholder="Название сеанса">
+                        <input class="dataAudiosession1__col2_name" type="text" name="nameAudiosession"
+                            placeholder="Название сеанса">
                         <textarea class="dataAudiosession1__col2_smalldescription" name="smalldescription"
                             id="smalldescription" cols="30" rows="5" placeholder="Краткое описание"></textarea>
                     </div>
                 </div>
                 <div class="content__center_dataAudiosession2">
 
-                    <input class="dataAudiosession2__addaudio" name="addAudio" type="text" placeholder="+ Добавить аудиофайл">
-
+                    <input class="dataAudiosession2__addaudio" name="addAudio" type="text"
+                        placeholder="+ Добавить аудиофайл">
+                    <!-- -------------------------audio-list------------------------------------ -->
+                    <div >
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                                <select>
+                                    <option>Список аудио:</option>
+                                </select>
+                                <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                                <label for="one">
+                                    <input type="checkbox" id="one" />First checkbox</label>
+                                <label for="two">
+                                    <input type="checkbox" id="two" />Second checkbox</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" />Third checkbox</label>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- -------------------------audio-list------------------------------------ -->
                     <textarea class="dataAudiosession2__fulldescription" name="fulldescription" id="fulldescription"
                         cols="40" rows="5" placeholder="Полное описание"></textarea>
 
                     <div class="btn-group-toggle dataAudiosession2__publicheckpoint" data-toggle="buttons">
-                        <input class="raiocheckbox" type="radio" name="raiocheckbox" /><span>Опубликовать</span>
+                        <input class="radiocheckbox" type="radio" name="radiocheckbox" /><span>Опубликовать</span>
                     </div>
 
-                    <button type="submit" value="Отправить" class="dataAudiosession2__savebutton">Сохранить</button>
+                    <button class="dataAudiosession2__savebutton" type="submit" value="Отправить">Сохранить</button>
                 </div>
             </form>
         </div>
@@ -65,7 +94,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="/script.js"></script>
+    <script src="sssscript.js"></script>
 </body>
 
 </html>

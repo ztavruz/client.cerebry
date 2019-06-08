@@ -1,26 +1,5 @@
 window.onload = () => {
 
-    class MagicElement
-    {
-        constructor(tagName, classList = [], attributes = {}, html = "", children = []){
-            this.tagName = tagName;
-            this.classList = classList;
-            this.attributes = attributes;
-            this.html = html;
-            this.children = children;
-        }
-
-    }
-
-    const magic = new MagicElement("div", [], [], "", [
-        new MagicElement("a", [], {
-            href: "/test"
-        }, "go"),
-        new MagicElement("a", [], {
-            href: "/test"
-        }, "second"),
-    ]);
-
     const link = {
         tagName: 'a',
         classList: ['class2'],
@@ -82,4 +61,30 @@ function magicalCreateElement(obj){
     childNodes.forEach(child => el.appendChild(child));
 
     return el;
+
+
+
+    // ------------------------------------------------------------
+
+    class MagicElement
+    {
+        constructor(tagName, classList = [], attributes = {}, html = "", children = []){
+            this.tagName = tagName;
+            this.classList = classList;
+            this.attributes = attributes;
+            this.html = html;
+            this.children = children;
+        }
+        
+
+    }
+
+    const magic = new MagicElement("div", [], [], "", [
+        new MagicElement("a", [], {
+            href: "/test"
+        }, "go"),
+        new MagicElement("a", [], {
+            href: "/test"
+        }, "second"),
+    ]);
 }
