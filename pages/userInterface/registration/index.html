@@ -60,7 +60,7 @@
                         <div class="item__title_label"><label for="">E-mail адрес:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -70,7 +70,7 @@
                         <div class="item__title_label"><label for="">Телефон:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -80,7 +80,7 @@
                         <div class="item__title_label"><label for="">Пароль:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -90,7 +90,7 @@
                         <div class="item__title_label"><label for="">Подтверждение пароля:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -100,7 +100,7 @@
                         <div class="item__title_label"><label for="">Фамилия:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -110,7 +110,7 @@
                         <div class="item__title_label"><label for="">Имя:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
                 <div class="center__left_item">
@@ -119,45 +119,57 @@
                         <div class="item__title_label"><label for="">Отчество:</label></div>
                     </div>
                     <div class="left__item_value">
-                        <input type="text">
+                        <input type="text" placeholder="">
                     </div>
                 </div>
-                <div class="center__left_item">
+                <div class="center__left_item birthday">
                     <!-- --birthday-- -->
-                    <div class="left__item_title">
+                    <div class="left__item_title ">
                         <div class="item__title_star">*</div>
                         <div class="item__title_label"><label for="">Дата рождения:</label></div>
                     </div>
-                    <div class="left__item_value">
-                        <div class="item__value_id">
-                            <input type="text">
+                    <div class="left__item_box ">
+                        <!-- --day-- -->
+                        <div class="left__item_value day">
+                            <select  name="" id="">
+                                <option value="">21</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
                         </div>
-                        <div class="item__value_id">
-                            <input type="text">
+                        <div class="left__item_value month">
+                            <!-- --month-- -->
+                            <select name="" id="">
+                                <option value="">май</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
                         </div>
-                        <div class="item__value_id">
-                            <input type="text">
+                        <div class="left__item_value year">
+                            <!-- --year-- -->
+                            <select name="" id="">
+                                <option value="">2019</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <div class="center__left_item">
+                <div class="center__left_item gender ">
                     <!-- --gender-- -->
                     <div class="left__item_title">
                         <div class="item__title_label"><label for="">Пол:</label></div>
                     </div>
-                    <div class="left__item_box">
-                        <div class="left__item_value">
-                            <div class="item__value_id">
+                    <div class="left__item_box gender__box ">
+                        <div class="left__item_value ">
                                 <input class="check__men" type="radio" name="check__men" id="check__men"
                                     value="option2">
                                 <label for="check__men">
                                     Мужской
                                 </label>
-                            </div>
                         </div>
-                        <div class="left__item_value"></div>
-                        <div class="item__value_id">
-                            <input class="check__women" type="radio" name="check__women" id="check__women"
+                        <div class="left__item_value ">
+                                <input class="check__women" type="radio" name="check__women" id="check__women"
                                 value="option2">
                             <label for="check__women">
                                 Женский
@@ -165,37 +177,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- --FullAdress-- -->
-            <div class="center__left_item">
-                <div class="left__item_title">
-                    <div class="item__title_star">*</div>
-                    <div class="item__title_label"><label for="">Адрес проживания:</label></div>
-                </div>
-                <div class="left__item_value">
-                    <!-- --country-- -->
-                    <div class="select__title">Выберите страну</div>
-                    <select name="" id="">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                </div>
-            </div>
-            <div class="center__left_item">
-                <div class="left__item_box">
-                    <!-- --region-- -->
-                    <div class="left__item_value">
-                        <div class="select__title">Выберите регион:</div>
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
+                <!-- --FullAdress-- -->
+                <div class="center__left_item">
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for="">Адрес проживания:</label></div>
                     </div>
-                    <!-- --city-- -->
                     <div class="left__item_value">
-                        <div class="select__title">Выберите город:</div>
+                        <!-- --country-- -->
+                        <div class="select__title">Выберите страну</div>
                         <select name="" id="">
                             <option value=""></option>
                             <option value=""></option>
@@ -203,43 +193,73 @@
                         </select>
                     </div>
                 </div>
-            </div>
-            <div class="center__left_item">
-                <!-- --street-- -->
-                <div class="left__item_value">
-                    <input type="text" placeholder="Улица">
+                <div class="center__left_item">
+                    <div class="left__item_box">
+                        <!-- --region-- -->
+                        <div class="left__item_value">
+                            <div class="select__title">Выберите регион:</div>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <!-- --city-- -->
+                        <div class="left__item_value">
+                            <div class="select__title">Выберите город:</div>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <!-- --street-- -->
+                    <div class="left__item_value">
+                        <input type="text" placeholder="Улица">
+                    </div>
+                </div>
+
+                <div class="center__left_item">
+                    <div class="left__item_box">
+                        <!-- --build-- -->
+                        <div class="left__item_value">
+                            <input type="text" placeholder="Дом">
+                        </div>
+                        <!-- --apartment-- -->
+                        <div class="left__item_value" placeholder="Квартира">
+                            <input type="text">
+                        </div>
+                        <!-- --index-- -->
+                        <div class="left__item_value">
+                            <input type="text" placeholder="Индекс">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --skype-- -->
+                <div class="center__left_item">
+                    <div class="left__item_title">
+                        <div class="item__title_star">*</div>
+                        <div class="item__title_label"><label for=""></label></div>
+                    </div>
+                    <div class="left__item_value">
+                        <i class="icon_skype">S</i>
+                        <div class="vertical_line"></div>
+                        <input type="text" placeholder="Скайп">
+                    </div>
+                </div>
+                <div class="center__left_item">
+                    <div class="left__item_box agreement">
+                        <input type="checkbox" name="option1" value="option1">
+                        <p>Я прочитал и согласен с условиями</p>
+                        <a href="">"Соглашение об обработке персональных данных"</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="center__left_item">
-                <div class="left__item_box">
-                    <!-- --build-- -->
-                    <div class="left__item_value">
-                        <input type="text" placeholder="Дом">
-                    </div>
-                    <!-- --apartment-- -->
-                    <div class="left__item_value" placeholder="Квартира">
-                        <input type="text">
-                    </div>
-                    <!-- --index-- -->
-                    <div class="left__item_value">
-                        <input type="text" placeholder="Индекс">
-                    </div>
-                </div>
-            </div>
-
-            <!-- --skype-- -->
-            <div class="center__left_item">
-                <div class="left__item_title">
-                    <div class="item__title_star">*</div>
-                    <div class="item__title_label"><label for=""></label></div>
-                </div>
-                <div class="left__item_value">
-                    <i class="icon_skype">S</i>
-                    <div class="vertical_line"></div>
-                    <input type="text" placeholder="Скайп">
-                </div>
-            </div>
         </div>
         <div class="content__center_right">
 

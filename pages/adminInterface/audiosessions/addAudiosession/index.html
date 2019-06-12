@@ -15,7 +15,7 @@
 <body>
     <div class="content">
         <div class="content__center">
-            <form name="addingAudiosession" id="addingAudiosession">
+            <!-- <form class="addingAudiosession" name="addingAudiosession" id="addingAudiosession">
                 <div class="content__center_header">
                     <div class="center__header_add">
                         <i class="fas fa-plus-circle"></i>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="dataAudiosession1__col2">
-                        <input class="dataAudiosession1__col2_name" type="text" name="nameAudiosession"
+                        <input class="dataAudiosession1__col2_name" id="nameAudiosession" type="text" name="nameAudiosession"
                             placeholder="Название сеанса">
                         <textarea class="dataAudiosession1__col2_smalldescription" name="smalldescription"
                             id="smalldescription" cols="30" rows="5" placeholder="Краткое описание"></textarea>
@@ -48,30 +48,45 @@
                 </div>
                 <div class="content__center_dataAudiosession2">
 
-                    <input class="dataAudiosession2__addaudio" name="addAudio" type="text"
-                        placeholder="+ Добавить аудиофайл">
-                    <!-- -------------------------audio-list------------------------------------ -->
-                    <div >
-                        <div class="multiselect">
-                            <div class="selectBox" onclick="showCheckboxes()">
-                                <select>
-                                    <option>Список аудио:</option>
-                                </select>
-                                <div class="overSelect"></div>
-                            </div>
-                            <div id="checkboxes">
-                                <label for="one">
-                                    <input type="checkbox" id="one" />First checkbox</label>
-                                <label for="two">
-                                    <input type="checkbox" id="two" />Second checkbox</label>
-                                <label for="three">
-                                    <input type="checkbox" id="three" />Third checkbox</label>
-                            </div>
+                    <div class="dataAudiosession2__addaudio">
+                        <span class="addaudio__span">Добавить аудиофайлы</span>
+                    </div> -->
+                    <!-- -------------------------audio-list-- ---------------------------------- -->
+                    <!-- <div class="dataAudiosession2__audiolist">
+
+                        <div class="audiolist__item">
+                            <label class="audiolist__item_label" for="audios">
+                                <input class="item__label_input" type="checkbox" name="audios[]" >
+                                <span class="item__label_span">Значение</span>
+                            </label>
+                        </div> 
+                        
+                       <hr class="hr_audiolist">
+                        
+                        <div class="audiolist__item">
+                                <input type="checkbox">
                         </div>
-                    </div>
-                
+                        <hr class="hr_audiolist">
+                        <div class="audiolist__item">
+                                <input type="checkbox">
+                        </div>
+                        <hr class="hr_audiolist">
+                        <div class="audiolist__item">
+                                <input type="checkbox">
+                        </div>
+                        <hr class="hr_audiolist">
+                        <div class="audiolist__item">
+                                <input type="checkbox">
+                        </div>
+                        <hr class="hr_audiolist">
+                        <div class="audiolist__item">
+                                <input type="checkbox">
+                        </div>
+                       
+                    </div> -->
+
                     <!-- -------------------------audio-list------------------------------------ -->
-                    <textarea class="dataAudiosession2__fulldescription" name="fulldescription" id="fulldescription"
+                    <!-- <textarea class="dataAudiosession2__fulldescription" name="fulldescription" id="fulldescription"
                         cols="40" rows="5" placeholder="Полное описание"></textarea>
 
                     <div class="btn-group-toggle dataAudiosession2__publicheckpoint" data-toggle="buttons">
@@ -80,7 +95,7 @@
 
                     <button class="dataAudiosession2__savebutton" type="submit" value="Отправить">Сохранить</button>
                 </div>
-            </form>
+            </form> -->
         </div>
     </div>
 
@@ -94,7 +109,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="sssscript.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
