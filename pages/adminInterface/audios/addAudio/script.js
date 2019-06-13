@@ -1,6 +1,6 @@
 window.onload = async function () {
 
-    0
+    // 0
     const content__center_item = document.querySelector(".content__center_item");
 
     // 1
