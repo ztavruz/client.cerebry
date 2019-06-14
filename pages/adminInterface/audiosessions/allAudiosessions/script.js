@@ -1,16 +1,16 @@
 window.onload = function () {
 
   // alert(1);
-  axios.get('http://ServerCerebry/audioSession/getAllAudiosessions').then(function (response) {
+  axios.get('http://ServerCerebry/audioSession/getAll').then(function (response) {
 
 
     // console.log(response);
-    let arrAudiosessions = response.data;
+    let audiosessions = response.data;
     // console.log(arrAudiosessions);
     // 0
     const content__center_list = document.querySelector(".content__center_list");
 
-    arrAudiosessions.forEach((audiosession) => {
+    audiosessions.forEach((audiosession) => {
       // 1
       const center__list_item = document.createElement('div');
       center__list_item.classList.add('center__list_item');
@@ -71,28 +71,15 @@ window.onload = function () {
       item__listen_menu.id = "item__listen_menu";
       list__item_listen.appendChild(item__listen_menu);
 
-      // 1.4.2-1
-      const listen__menu_point1 = document.createElement('span');
-      listen__menu_point1.classList.add("listen__menu_point");
-      item__listen_menu.appendChild(listen__menu_point1);
-
-      // 1.4.2-2
-      const listen__menu_point2 = document.createElement('span');
-      listen__menu_point2.classList.add("listen__menu_point");
-      item__listen_menu.appendChild(listen__menu_point2);
-
-      // 1.4.2-3
-      const listen__menu_point3 = document.createElement('span');
-      listen__menu_point3.classList.add("listen__menu_point");
-      item__listen_menu.appendChild(listen__menu_point3);
+      const fa_ellipsis_v = document.createElement('i');
+      fa_ellipsis_v.classList.add("fas");
+      fa_ellipsis_v.classList.add("fa-ellipsis-v");
 
       // 1.4.2-4
       const listen__menu_block = document.createElement('div');
       listen__menu_block.classList.add("listen__menu_block");
       listen__menu_block.id = 'listen__menu_block';
-      item__listen_menu.appendChild(listen__menu_point1);
-      item__listen_menu.appendChild(listen__menu_point2);
-      item__listen_menu.appendChild(listen__menu_point3);
+      item__listen_menu.appendChild(fa_ellipsis_v);
       item__listen_menu.appendChild(listen__menu_block);
 
       // 1.4.2.4-1
@@ -102,8 +89,8 @@ window.onload = function () {
 
       // 1.4.2.4.1-1
       const fa_times_circle = document.createElement('i');
-      fa_times_circle.classList.add("fa-times-circle");
       fa_times_circle.classList.add("far");
+      fa_times_circle.classList.add("fa-times-circle");
       menu__block_comand1.appendChild(fa_times_circle);
 
       // 1.4.2.4-2
@@ -113,8 +100,8 @@ window.onload = function () {
 
       // 1.4.2.4.2-1
       const fa_trash_alt = document.createElement('i');
-      fa_trash_alt.classList.add("fa-trash-alt");
       fa_trash_alt.classList.add("fas");
+      fa_trash_alt.classList.add("fa-trash-alt");
       menu__block_comand2.appendChild(fa_trash_alt);
 
       // 1.4.2.4-1
@@ -147,46 +134,44 @@ window.onload = function () {
 
   let item__list_menu = document.querySelectorAll('.item__list_menu');
 
-    item__list_menu.forEach(function (element) {
-        element.onclick = function () {
-            if (element.children[1].classList.contains('menu__block_hide')) {
-                element.children[1].classList.remove('menu__block_hide');
-                element.children[1].classList.add('menu__block_show');
-            } else {
-                element.children[1].classList.remove('menu__block_show');
-                element.children[1].classList.add('menu__block_hide');
-            }
-        }
+  item__list_menu.forEach(function (element) {
+    element.onclick = function () {
+      if (element.children[1].classList.contains('menu__block_hide')) {
+        element.children[1].classList.remove('menu__block_hide');
+        element.children[1].classList.add('menu__block_show');
+      } else {
+        element.children[1].classList.remove('menu__block_show');
+        element.children[1].classList.add('menu__block_hide');
+      }
+    }
 
-        console.log(element.children);
-    });
+    console.log(element.children);
+  });
 
 
-  // let item__listen_menu = document.getElementById('item__listen_menu');
-  // let listen__menu_block = document.getElementById('listen__menu_block');
-  // // console.log(item__listen_menu);
+  let item__listen_menu = document.querySelector('#item__listen_menu');
+  let listen__menu_block = document.getElementById('#listen__menu_block');
+  // console.log(item__listen_menu);
 
-  // item__listen_menu.onclick = function () {
-  //   listen__menu_block.style.display = 'block';
+  item__listen_menu.onclick = function () {
+    listen__menu_block.style.display = 'flex';
   //   // console.log('......');
-  // }
+  }
 
-  // let item__list_menu = document.querySelectorAll('#item__listen_menu');
-  // console.log(item__list_menu);
 
-  //   item__list_menu.forEach(function (element) {
-  //       element.onclick = function () {
-  //           if (element.children[1].classList.contains('menu__block_hide')) {
-  //               element.children[1].classList.remove('menu__block_hide');
-  //               element.children[1].classList.add('menu__block_show');
-  //           } else {
-  //               element.children[1].classList.remove('menu__block_show');
-  //               element.children[1].classList.add('menu__block_hide');
-  //           }
-  //       }
+  // item__list_menu.forEach(function (element) {
+  //   element.onclick = function () {
+  //     if (element.children[1].classList.contains('menu__block_hide')) {
+  //       element.children[1].classList.remove('menu__block_hide');
+  //       element.children[1].classList.add('menu__block_show');
+  //     } else {
+  //       element.children[1].classList.remove('menu__block_show');
+  //       element.children[1].classList.add('menu__block_hide');
+  //     }
+  //   }
 
-  //       console.log(element.children);
-  //   });
+  //   console.log(element.children);
+  // });
 
 
 
