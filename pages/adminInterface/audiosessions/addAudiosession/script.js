@@ -119,106 +119,49 @@ window.onload = async function () {
     content__center_dataAudiosession2.classList.add("content__center_dataAudiosession2");
     addingAudiosession.appendChild(content__center_dataAudiosession2);
 
-    // 1.3-1
-    const dataAudiosession2__addaudio = document.createElement('div');
-    dataAudiosession2__addaudio.classList.add("dataAudiosession2__addaudio");
-    dataAudiosession2__addaudio.name = "addAudio";
-    dataAudiosession2__addaudio.type = "text";
-    // dataAudiosession2__addaudio.placeholder = "+ Добавить аудиофайл";
-    content__center_dataAudiosession2.appendChild(dataAudiosession2__addaudio);
-
-    // 1.3.1-1
-    const addaudio__span = document.createElement('span');
-    addaudio__span.classList.add('addaudio__span');
-    addaudio__span.innerHTML = "+ Добавить аудиофайл";
-    dataAudiosession2__addaudio.appendChild(addaudio__span);
-
-    // 1.3-2
-    // -------------------------audio-list------------------------------------
-    // const dataAudiosession2__audiolist = document.querySelector('.dataAudiosession2__audiolist');
-    const dataAudiosession2__audiolist = document.createElement('div');
-    dataAudiosession2__audiolist.classList.add('dataAudiosession2__audiolist');
-
-    audios.map(audio => {
-        // 1.3.2-1
-        const audiolist__item = document.createElement('div');
-        audiolist__item.classList.add("audiolist__item");
-
-        // 1.3.2.1-1
-        const audiolist__item_label = document.createElement('label');
-        audiolist__item_label.classList.add("audiolist__item_label");
-        audiolist__item.setAttribute('for', 'audios');
-
-        // 1.3.2.1.1-1
-        const item__label_input = document.createElement('input');
-        item__label_input.classList.add("item__label_input");
-        item__label_input.setAttribute('type', 'checkbox');
-        item__label_input.setAttribute('name', 'audios[]');
-        item__label_input.setAttribute('value', audio['id']);
-
-        // 1.3.2.1.1-2
-        const item__label_span = document.createElement('span');
-        item__label_span.classList.add("item__label_span");
-        item__label_span.innerHTML = audio['name'];
-
-        // 1.3.2-2
-        const hr_audiolist = document.createElement('hr');
-        hr_audiolist.classList.add("hr_audiolist");
+    const center__dataAudiosession2_item = document.createElement('div');
+    center__dataAudiosession2_item.classList.add("center__dataAudiosession2_item");
+    content__center_dataAudiosession2.appendChild(center__dataAudiosession2_item);
 
 
-        audiolist__item.appendChild(audiolist__item_label);
-        audiolist__item_label.appendChild(item__label_input);
-        audiolist__item_label.appendChild(item__label_span);
-
-        // console.log(audio['name']);
-
-        dataAudiosession2__audiolist.appendChild(audiolist__item);
-        dataAudiosession2__audiolist.appendChild(hr_audiolist);
-
-    });
-    content__center_dataAudiosession2.appendChild(dataAudiosession2__audiolist);
+    const dataAudiosession2__item_audio = document.createElement('label');
+    dataAudiosession2__item_audio.classList.add("dataAudiosession2__item_audio");
+    dataAudiosession2__item_audio.setAttribute('for', 'audio');
+    center__dataAudiosession2_item.appendChild(dataAudiosession2__item_audio);
 
 
-    // -------------------------audio-list------------------------------------
+    const item__audio_span = document.createElement('span');
+    item__audio_span.classList.add("item__audio_span");
+    item__audio_span.innerHTML = "+ Добавить аудиофайл";
+    dataAudiosession2__item_audio.appendChild(item__audio_span);
+
+
+    const item__audio_input = document.createElement('input');
+    item__audio_input.classList.add("item__audio_input");
+    item__audio_input.setAttribute('type', 'file');
+    item__audio_input.setAttribute('id', 'audio');
+    item__audio_input.setAttribute('name', 'audio');
+    item__audio_input.setAttribute('placeholder', '+ Добавить аудиофайл');
+    center__dataAudiosession2_item.appendChild(item__audio_input);
+
 
     // 1.3-3
     const dataAudiosession2__fulldescription = document.createElement('textarea');
     dataAudiosession2__fulldescription.classList.add("dataAudiosession2__fulldescription");
-    dataAudiosession2__fulldescription.name = "fulldescription";
+    dataAudiosession2__fulldescription.setAttribute('name', 'fulldescription');
     dataAudiosession2__fulldescription.setAttribute('id', 'fulldescription');
-    dataAudiosession2__fulldescription.cols = "40";
-    dataAudiosession2__fulldescription.rows = "5";
+    dataAudiosession2__fulldescription.setAttribute('cols', '40');
+    dataAudiosession2__fulldescription.setAttribute('rows', '5');
     dataAudiosession2__fulldescription.placeholder = "Полное описание";
     content__center_dataAudiosession2.appendChild(dataAudiosession2__fulldescription);
 
-    // 1.3-4
-    const dataAudiosession2__publicheckpoint = document.createElement('div');
-    dataAudiosession2__publicheckpoint.classList.add("btn-group-toggle");
-    dataAudiosession2__publicheckpoint.classList.add("dataAudiosession2__publicheckpoint");
-    dataAudiosession2__publicheckpoint.setAttribute('data-toggle', 'buttons');
-    content__center_dataAudiosession2.appendChild(dataAudiosession2__publicheckpoint);
-
-    // 1.3.4-1
-    const radiocheckbox = document.createElement('input');
-    radiocheckbox.classList.add("radiocheckbox");
-    radiocheckbox.type = 'radio';
-    radiocheckbox.name = "radiocheckbox";
-    dataAudiosession2__publicheckpoint.appendChild(radiocheckbox);
-
-    // 1.3.4.1-1
-    const spaner = document.createElement('span');
-    spaner.innerHTML = "Опубликовать";
-    radiocheckbox.appendChild(spaner);
-
-    // 1.3-5
+    
     const dataAudiosession2__savebutton = document.createElement('button');
     dataAudiosession2__savebutton.classList.add("dataAudiosession2__savebutton");
-    dataAudiosession2__savebutton.type = "submit";
-    dataAudiosession2__savebutton.value = "Отправить";
+    dataAudiosession2__savebutton.setAttribute('type', 'submit');
+    dataAudiosession2__savebutton.setAttribute('value', 'Отправить');
     dataAudiosession2__savebutton.innerHTML = "Сохранить";
     content__center_dataAudiosession2.appendChild(dataAudiosession2__savebutton);
-
-
 
 
     const form = document.querySelector("#addingAudiosession");
@@ -228,32 +171,15 @@ window.onload = async function () {
     form.onsubmit = (e) => {
         e.preventDefault();
 
-        
-        // const audiosessionName = document.querySelector('#nameAudiosession').value;
-        // const smalldescription = document.querySelector('#smalldescription').value;
-        // const fulldescription = document.querySelector('#fulldescription').value;
-
-        const checkboxes = document.querySelectorAll('.item__label_input');
-        const checked = [];
-        for (const checkbox of checkboxes) {
-            if (checkbox.checked === true) {
-                checked.push(parseInt(checkbox.value));
-            }
-        }
-
-        // const dataForm = {
-        //     audiosessionName,
-        //     smalldescription,
-        //     fulldescription,
-        //     checked
-        // };
-
         const fd = new FormData(e.target);
         // console.log(dataForm);
 
-        if (fd.get('image').type !== 'image/png' || fd.get('image').type !== 'image/jpg' ) {
+        if (fd.get('image').type !== 'image/png' || fd.get('image').type !== 'image/jpg') {
             console.log('неверный формат файла');
         }
+        // if (fd.get('audio').type !== 'image/png' || fd.get('image').type !== 'image/jpg') {
+        //     console.log('неверный формат файла');
+        // }
 
         fd.forEach(item => {
             console.log(item);
