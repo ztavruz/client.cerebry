@@ -1,7 +1,8 @@
 window.onload = async function () {
     // 0
     const container__row = document.querySelector("#container__row");
-    const audiosessions = await axios.get('http://ServerCerebry/audioSession/getAll').then(res => res.data);
+    const audiosessions = await axios.get('http://server.cerebry.xyz/audioSession/getAll').then(res => res.data);
+    // const audiosessions = await axios.get('http://ServerCerebry/audioSession/getAll').then(res => res.data);
     
     audiosessions.map(session =>{
         const col_12 = document.createElement('div');
