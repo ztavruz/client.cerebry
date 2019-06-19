@@ -1,8 +1,5 @@
 window.onload = async function () {
 
-    // const audios = await axios.get("http://server.cerebry.xyz/audio/getAll").then(res => res.data);
-    // const audios = await axios.get("http://ServerCerebry/audio/getAll").then(res => res.data);
-    // console.log(audios);
 
     // 0
     const content__center = document.querySelector(".content__center");
@@ -172,10 +169,12 @@ window.onload = async function () {
     form.onsubmit = (e) => {
         e.preventDefault();
 
+        
+
         const fd = new FormData(e.target);
         // console.log(dataForm);
 
-        if (fd.get('image').type !== 'image/png' || fd.get('image').type !== 'image/jpg') {
+        if (fd.get('image').type !== 'image/png' && fd.get('image').type !== 'image/jpg') {
             console.log('неверный формат файла');
         }
         // if (fd.get('audio').type !== 'image/png' || fd.get('image').type !== 'image/jpg') {
@@ -187,8 +186,8 @@ window.onload = async function () {
         });
         // fd.push(checked);
 
-        axios.post("http://server.cerebry.xyz/audioSession/create", fd).then(res => {
-        // axios.post("http://ServerCerebry/audioSession/create", fd).then(res => {
+        // axios.post("http://server.cerebry.xyz/audioSession/create", fd).then(res => {
+        axios.post("http://ServerCerebry/audioSession/create", fd).then(res => {
             // console.log(res);
             // console.log(checked);
             // alert('Добавил' + res.data.name);
